@@ -129,6 +129,26 @@ img {
   margin-left: auto;
 }
 
+.menu-link {
+  position: relative;
+}
+
+.menu-link::after {
+  position: absolute;
+  content: "";
+  left: 0;
+  bottom: 0;
+  height: 4px;
+  width: 100%;
+  border-radius: 2px;
+  background-color: var(--focus-color);
+  display: none;
+}
+
+.menu-link:hover::after {
+  display: block;
+}
+
 .link {
   padding-top: 32px;
   padding-bottom: 32px;
@@ -320,6 +340,30 @@ img {
   margin-top: 30px;
   width: 370px;
   height: 294px;
+}
+
+.work-title-wrapper {
+  position: relative;
+}
+
+.work-title-wrap {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 70px;
+  width: 100%;
+  font-family: var(--main-font);
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+
+  color: var(--main-bgc);
+  background: rgba(47, 48, 58, 0.8);
 }
 
 .second-title {
@@ -735,21 +779,25 @@ img {
 
 .modal-close-btn {
   position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
   top: 8px;
   right: 8px;
   width: 30px;
   height: 30px;
   background: var(--main-bgc);
   border: 1px solid rgba(0, 0, 0, 0.1);
+  border-width: 1px;
   border-radius: 50%;
   cursor: pointer;
 }
 
 .btn-close-icon {
-  display: flex;
-  align-items: center;
-  width: 18px;
-  height: 18px;
+  height: 11px;
+  width: 11px;
+  fill: var(--black-color);
 }
 
 .is-hidden {
