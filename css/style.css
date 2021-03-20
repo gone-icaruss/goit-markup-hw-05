@@ -135,7 +135,6 @@ img {
 
 .nav-item {
   position: relative;
-  padding: 32px 0;
 }
 
 .current::after {
@@ -249,7 +248,6 @@ img {
 .button {
   display: block;
   min-width: 136px;
-  border-radius: 4px;
   padding: 10px 32px;
   margin: auto;
 
@@ -261,7 +259,8 @@ img {
   align-items: center;
   text-align: center;
   letter-spacing: 0.06em;
-  cursor: pointer;
+  border-radius: 4px;
+  border: none;
   color: var(--main-bgc);
   background-color: var(--focus-color);
 }
